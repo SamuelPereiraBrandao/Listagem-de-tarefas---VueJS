@@ -18,7 +18,7 @@
             </div>
 
             <div class="w-full">
-                <input
+                <input required
                     v-model="title"
                     type="text"
                     placeholder="Digite a sua tarefa"
