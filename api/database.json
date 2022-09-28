@@ -1,3 +1,19 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "title": "Curso 1",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "title": "Curso 2",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "title": "Curso 3",
+      "completed": true,
+      "id": 3
+    }
+  ]
 }

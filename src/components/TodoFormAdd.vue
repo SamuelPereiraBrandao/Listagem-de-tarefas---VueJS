@@ -3,7 +3,7 @@
     focus:outline-none mb-2 text-center">ADICIONAR TAREFAS</h1>
     <form @submit.stop.prevent="addTodo" class="flex items-center px-4 bg-gray-900 h-15 
     rounded-sm border-l-2 border-green-400 mb-3">
-        <input  required v-model="title" placeholder="Adicione um novo item ..." type="text" class="bg-gray-900 placeholder-gray-500 text-gray-500 
+        <input required v-model="title" placeholder="Adicione um novo item ..." type="text" class="bg-gray-900 placeholder-gray-500 text-gray-500 
     font-light focus:outline-none block w-full appearance-none leading-normal 
     py-3 pr-3">
 
@@ -14,24 +14,24 @@
     </form>
 </template>
 <script>
-    export default {
-        data () {
-            return {
-                title:''
+export default {
+    data() {
+        return {
+            title: ''
+        }
+    },
+    methods: {
+        addTodo() {
+            if (!this.title) {
+                return false;
             }
-        },
-        methods: {
-            addTodo(){
-                if(!this.title){
-                    return false;
-                }
-                this.$store.dispatch('addTodo',{
-                    title: this.title,
-                    completed: false
-                }).finally(() => {
-                    this.title = ''
-                })
-            }
+            this.$store.dispatch('addTodo', {
+                title: this.title,
+                completed: false
+            }).finally(() => {
+                this.title = ''
+            })
         }
     }
+}
 </script>
