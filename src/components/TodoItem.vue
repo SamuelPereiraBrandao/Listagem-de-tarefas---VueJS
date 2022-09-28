@@ -1,6 +1,6 @@
 <template>
     
-    <div class="bg-gray-300 rounded-sm">
+    <div class="bg-gray-300 rounded-sm mt-1">
         <div class="flex items-center px-4 py-3 border-b border-gray-400 last:border-b-0">
             <div class="flex items-center justify-center mr-2">
                 <button
