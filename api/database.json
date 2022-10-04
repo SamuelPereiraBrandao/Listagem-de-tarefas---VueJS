@@ -7,12 +7,12 @@
     },
     {
       "title": "Curso 2",
-      "completed": true,
+      "completed": false,
       "id": 2
     },
     {
       "title": "Curso 3",
-      "completed": true,
+      "completed": false,
       "id": 3
     }
   ]
